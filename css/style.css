@@ -1,0 +1,477 @@
+	/*GENERAL SETTINGS*/
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+*{
+	margin: 0;
+	padding:0;
+}
+		/*SIDEBAR SETTINGS*/
+#wrapper{
+	display: flex;
+	width:  100%;
+	align-items: stretch;
+}
+#sidebar{
+	min-width: 250px;
+	max-width: 250px;
+	background-color: #242b2e;
+	color: #fff;
+	transition: all .3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+.navbar-brand{
+	width: 100%;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+.navbar{
+	padding: 0;
+}
+.mainMenu{
+	width: 100%;
+}
+.mainMenu .nav-item{
+	text-align: right;
+	border-bottom: 1px solid #293034;
+}
+.mainMenu .nav-item a{
+	background-color: #31383c;
+	color: #fff;
+	font-weight: 300;
+}
+.mainMenu .nav-item a:hover{
+	background-color:#2db8b7; ;
+	transition: 0.7s;
+}
+.sidebarHeading{
+	width: 100%;
+	text-align: right;
+	padding-right: 15px;
+}
+.sidebarHeading span{
+font-weight: 100;
+font-size: 16px;
+line-height: 16px;
+vertical-align: bottom;
+}
+.works-menu{
+	width: 100%;
+	text-align: right;
+}
+.works-menu .nav-item a{
+	color: #6b7072;
+	padding-top: 0;
+	padding-bottom: 2px; 
+	font-size: 13px;
+
+}
+.works-menu .nav-item a:hover{
+	color: white;
+	transition: 0.7s;
+}
+.social-icons{
+	width: 100%;
+	padding-right: 15px;
+}
+.social-icons li{
+	text-align: right;
+	margin-left:8px;
+	float: right;
+	list-style: none;
+}
+.copyright{
+	color: #6b7072;
+	font-size: 13px;
+	margin-left: 50px;
+
+}
+ 		/*PAGE CONTENT*/
+ #content{
+ 	width: 100%;
+ }
+ .btn-info{
+ 	border-radius:0;
+ 	background-color:#1ab5b3 ;
+ 	position: fixed;
+ 	z-index: 5;
+ 	opacity: .7;
+ 	outline: none;
+ }
+ .container-fluid{
+ 	padding: 0;
+ }
+ .image{
+ 	width: 100%;
+ 	display: block;
+ 	height: auto;
+ }
+ .overlay{
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	height: 100%;
+ 	width: 100%;
+ 	opacity: 0;
+ 	background-color:#2db8b7;
+ 	cursor: pointer;
+ 	transition: all 0.7s;
+
+ }
+ .overlay-container:hover .overlay{
+ 	opacity:.7;
+ }
+ .text{
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	transform: translate(-50%,-50%);
+ 	text-align: center;
+ 	width: 100%;
+ 	height: auto;
+ 	color: #fff;
+ }
+ .overlay-border{
+ 	width: 45%;
+ 	border: 1px solid #fff;
+ 	margin: 0 auto;
+ 	margin-bottom: 15px;
+ 	opacity: .7;
+ }
+ .project-title{
+ 	font-size: 20px;
+ 	font-weight: 300;
+ 	letter-spacing: 1px;
+ }
+ .project-area{
+ 	font-size: 12px;
+ }
+ .btn-info2{
+ 	background-color: #1ab5b3;
+ 	position: fixed;
+ 	top: 0;
+ 	right: 0;
+ 	border-radius: 0;: 
+ }
+ .btn-info2 i{
+ 	color: #fff;
+ }
+ #sidebar2{
+ 	min-width: 200px;
+ 	max-width: 200px;
+ 	background-color: rgba(0,0,0,.6);
+ 	position: fixed;
+ 	padding: 10px;
+ 	top: 40px;
+ 	right: -200px;
+ 	z-index: 10;
+ 	transition: 0.7s;
+
+ }
+ #sidebar2.active{
+ 	right:0;
+ }
+ .info-text{
+ 	color:#fff;
+ 	font-size: 12px;
+ 	font-weight: 100;
+ 	margin-bottom: 7px;
+ }
+ #sidebar2 i{
+ 	margin-right: 10px;
+ }
+
+ 		/*WORK PAGE*/
+
+ .content-area-gray{
+ 	background-color: gray;
+ 	padding: 20px;
+ }
+ .content-area-white{
+ 	background-color:#fff;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ }
+
+.gutter{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.border-r{
+border-right: 1px solid #d7d7d7;
+}
+h2{
+	font-size: 24px;
+	font-weight: 400;
+}
+.project-info-title i{
+	color: #1ab5b3;
+	border: 1px solid #1ab5b3;
+	border-radius:20px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.project-tags ul{
+	list-style: none;
+}
+.project-tags ul li{
+	display: inline-block;
+	padding: 5px;
+	margin-right: 5px;
+	border:1px solid #a3a3a3;
+	color: #a3a3a3;
+	border-radius: 10px;
+	transition: all 0.7s;
+	cursor: pointer;
+	font-size: 11px;
+
+}
+.project-tags ul li:hover{
+	color: #fff;
+	background-color: #1ab5b3;
+}
+.project-gallery ul{
+	list-style: none;
+}
+.project-gallery ul li{
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transition: all 0.7s;
+}
+.project-gallery ul li:hover{
+	opacity: .7;
+}
+.project-features{
+	font-size: 14px;
+	color: #a3a3a3;
+}
+.project-features .fa-check{
+	margin-right: 10px;
+}
+
+		/*END OF WORK PAGE */
+
+		/*ABOUT PAGE*/
+
+.ourStaff{
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 15px;
+}
+.ourStaff img{
+	display: block;
+	width: 90%;
+	height: auto;
+}
+.ourStaffOverlay{
+	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	height: 0;
+ 	width: 90%;
+ 	opacity: 0;
+ 	background-color:rgba(41,180,178,.7);
+ 	cursor: pointer;
+ 	transition: all 0.5s;
+}
+.ourStaff:hover .ourStaffOverlay{
+	height: 100%;
+	opacity: 0.7;
+}
+.ourStaffText{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+}
+
+.skillRow h4, .skillRow p{
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.progress{
+	border-radius: 0;
+	border:1px solid #e2e2e2;
+	background-color: #fff;
+	margin-top: -10px;
+}
+ .progress .bg-info{
+ 	background-color: #e2e2e2 !important;
+ }
+.testimonialsArea{
+	background-color: #1ab5b3;
+}
+
+.testimonialsRow{
+	border:1px solid #e2e2e2;
+}
+.testimonialsArea h4{
+	line-height: 80px;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 300;
+	color: white;
+}
+.services-point{
+	margin-left: 15px;
+}
+
+		/*END OF ABOUT PAGE*/
+
+		/*BLOG PAGE*/
+
+.card{
+	border:none;
+	border-radius: 0;
+}
+.textCard{
+	text-align: center;
+	color: #fff;
+	background-color: #1ab5b3;
+}
+.textCard .card-link{
+	color: #fff;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.card-footer .card-link{
+	color: #9a9a9a;
+}
+
+.carousel-control-prev, .carousel-control-next{
+	background-color: #1ab4b2;
+	width: 30px;
+	height: 30px;
+	top: calc(50% - 15px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+	#sidebar{
+		margin-left: -250px;
+	}
+	#sidebar.active{
+		margin-left: 0;
+	}
+	.textCenter{
+		text-align: center;
+	}
+	.related-p{
+		width: 80%;
+	}
+} 
